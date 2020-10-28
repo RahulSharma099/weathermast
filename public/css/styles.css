@@ -1,14 +1,15 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    background-color: black;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: grey;
 }
 
 h1 {
-    color: red;
+  color: red;
 }
 
 img {
-    width: 250px;
-    height: auto;
+  width: 250px;
+  height: auto;
+  border-radius: 500px;
 }
