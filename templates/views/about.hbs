@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="icon" href="/img/weather.png">
 </head>
 
 <body>
-    <h1>Help Page</h1>
-    <p>{{help1}}</p>
-    <p>{{help2}}</p>
+    <div class="main-content">
+        {{>header}}
+        <img class="portrait" src="./img/images.jpg" alt="My image">
+    </div>
+    {{>footer}}
 </body>
 
 </html>
