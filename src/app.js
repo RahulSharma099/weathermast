@@ -1,9 +1,11 @@
 const path = require('path');
 const express = require('express');
+const dotenv = require('dotenv');
 const hbs = require('hbs');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
+dotenv.config();
 const app = express();
 
 // Define paths for express config
@@ -95,6 +97,19 @@ app.get('*', (req, res) => {
   });
 });
 
-app.listen(5000, () => {
-  console.log('Server started at port 5000');
+app.listen(process.env.PORT || 5000, () => {
+  console
+    .log(
+      `
+  ################################################
+  🛡️  Server listening on port: ${config.port} 🛡️
+  ################################################
+`,
+    )
+    .on('error', err => {
+      console.log({
+        errorName: err.name,
+        error: err,
+      });
+    });
 });
