@@ -98,18 +98,11 @@ app.get('*', (req, res) => {
 });
 
 app.listen(process.env.PORT || 5000, () => {
-  console
-    .log(
-      `
+  console.log(
+    `
   ################################################
   🛡️  Server listening on port: ${process.env.port} 🛡️
   ################################################
 `,
-    )
-    .on('error', err => {
-      console.log({
-        errorName: err.name,
-        error: err,
-      });
-    });
+  );
 });
