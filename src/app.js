@@ -102,7 +102,7 @@ app.listen(process.env.PORT || 5000, () => {
     .log(
       `
   ################################################
-  🛡️  Server listening on port: ${config.port} 🛡️
+  🛡️  Server listening on port: ${process.env.port} 🛡️
   ################################################
 `,
     )
